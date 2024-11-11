@@ -1,4 +1,4 @@
-import Hero from './sections/Hero/hero';
+import Hero from './sections/Hero/Hero';
 import './App.css';
 import Projects from './sections/projects/projects';
 import Skills from './sections/Skills/skills';
