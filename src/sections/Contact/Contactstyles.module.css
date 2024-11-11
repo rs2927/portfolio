@@ -1,0 +1,131 @@
+/* Container styling */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--background-color);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Section Title */
+  .sectiontitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+  }
+  
+  /* Form Styling */
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+  }
+  
+  /* Form Group Styling */
+  .formgroup {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  /* Input and Textarea Styling */
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    background-color: var(--form-input-bg);
+    color: var(--form-text-color);
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  textarea:focus {
+    outline: none;
+    border-color: var(--btn-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Placeholder Styling */
+  input::placeholder,
+  textarea::placeholder {
+    color: #888;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  
+  /* Submit Button Styling */
+  .hover-btn {
+    padding: 15px 30px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: var(--btn-text-color);
+    background: linear-gradient(135deg, #0987f2, #066bca);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    display: inline-block;
+    transform: translateY(0);
+  }
+ 
+
+.hover-btn:hover {
+    background: linear-gradient(135deg, #066bca, #054f8c); /* Darker gradient on hover */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px); /* Slight lift on hover */
+  }
+
+  .hover-btn:active {
+    transform: translateY(1px); /* Slightly pressed down on click */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+.hover-btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+.hover-btn:hover::after {
+    opacity: 1; /* Subtle shine effect */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      padding: 20px;
+    }
+  
+    .sectiontitle {
+      font-size: 28px;
+    }
+  
+    .hover-btn {
+      font-size: 14px;
+      padding: 12px;
+    }
+  }
+  
