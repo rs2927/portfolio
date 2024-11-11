@@ -1,15 +1,15 @@
 import styles from "./Herostyles.module.css";
-import HeroImg from "../../assets/hero-img.png";
 import sun from "../../assets/sun.svg";
 import moon from "../../assets/moon.svg";
-import twitterLight from "../../assets/twitter-light.svg";
-import twitterDark from "../../assets/twitter-Dark.svg";
 import githubLight from "../../assets/github-light.svg";
 import githubDark from "../../assets/github-Dark.svg";
 import linkdlnLight from "../../assets/linkedin-light.svg";
 import linkdlnDark from "../../assets/linkedin-Dark.svg";
 import CV from "../../assets/Resume Rahul.pdf.pdf";
 import { useTheme } from "../../Common/Themecontext";
+import HeroImg from "../../assets/hero-img.png";
+import twitterLight from "../../assets/twitter-light.svg";
+import twitterDark from "../../assets/twitter-dark.svg";
 
 function hero() {
   const { theme, toggleTheme } = useTheme();
